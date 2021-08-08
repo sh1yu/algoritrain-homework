@@ -10,6 +10,7 @@ mod rotate;
 mod merge;
 mod two_sum;
 mod plus_one;
+mod trap;
 
 // Definition for singly-linked list.
 #[derive(PartialEq, Eq, Clone, Debug)]
