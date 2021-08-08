@@ -3,7 +3,8 @@
 //
 use super::{Solution};
 
-
+//思路（参考题解）：
+//直接三次旋转
 impl Solution {
     pub fn rotate(nums: &mut Vec<i32>, k: i32) {
         let len = nums.len();

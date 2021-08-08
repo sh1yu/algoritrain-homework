@@ -6,6 +6,8 @@
 //
 use super::{Solution};
 
+// 思路：
+// 直接双指针从后往前合并即可，数组大小恰好相等，不用处理边界情况。
 impl Solution {
     pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
         let mut i = m + n - 1;

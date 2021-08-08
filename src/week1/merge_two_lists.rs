@@ -3,6 +3,9 @@
 
 use super::{ListNode, Solution};
 
+// 思路：
+// 迭代：双指针
+// 递归
 impl Solution {
     pub fn merge_two_lists(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut result = ListNode::new(0);

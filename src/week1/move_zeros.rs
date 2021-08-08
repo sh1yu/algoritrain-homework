@@ -12,6 +12,7 @@
 // 尽量减少操作次数。
 use super::{Solution};
 
+//思路：双指针
 impl Solution {
     pub fn move_zeroes(nums: &mut Vec<i32>) {
         let mut j = 0;

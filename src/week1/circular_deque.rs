@@ -13,6 +13,8 @@
 // isFull()：检查双端队列是否满了。
 use std::collections::VecDeque;
 
+//思路（参考题解）：
+//直接使用系统的VecDeque，不过有对于容量的判断
 struct MyCircularDeque {
     cache: VecDeque<i32>,
     capacity: usize,
