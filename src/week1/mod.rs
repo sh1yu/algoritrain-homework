@@ -5,6 +5,11 @@ use std::cell::RefCell;
 mod move_zeros;
 mod merge_two_lists;
 mod circular_deque;
+mod remove_duplicates;
+mod rotate;
+mod merge;
+mod two_sum;
+mod plus_one;
 
 // Definition for singly-linked list.
 #[derive(PartialEq, Eq, Clone, Debug)]
