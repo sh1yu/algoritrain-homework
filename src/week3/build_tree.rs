@@ -9,7 +9,7 @@ use super::{Solution, TreeNode};
 
 // 思路：使用前序遍历的第一个节点对中序遍历进行二分，中序遍历左侧为其左子树，右侧为其右子树
 // 递归建立左右子树的根节点，然后挂在当前节点上即可
-// 时间复杂度： O(nlogn), 每一个节点都需要处理一次，每次处理需要logn的查找时间
+// 时间复杂度： O(n^2), 每一个节点都需要处理一次，每次处理需要n的查找时间
 // 空间复杂度： O(n)
 impl Solution {
     pub fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
@@ -23,10 +23,7 @@ impl Solution {
 
         let root_val = preorder[0];
 
-        let index = inorder.binary_search(&root_val).unwrap();
-        // 经过leetcode上的提交测试，发现leetcode上的rust无法使用binary_search搜索到正确的位置，不知道是不是太老
-        // 使用如下的自己暴力搜索的方式可以正常提交运行
-        // let index = Solution::search(root_val, &inorder).unwrap();
+        let index = Solution::search(root_val, &inorder).unwrap();
 
         let mut root = TreeNode::new(root_val);
         if index > 0 {

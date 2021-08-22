@@ -1,5 +1,6 @@
 mod lowest_common_ancestor;
 mod build_tree;
+mod combine;
 
 use std::fmt::{Debug};
 use std::rc::Rc;
