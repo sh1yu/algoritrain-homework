@@ -12,7 +12,8 @@ struct Solution {
 }
 
 // 思路：参考官方题解，使用标准化的回溯模版
-// 时间复杂度：
+// 时间复杂度：O(2^k)
+// 空间复杂度：O(n)
 impl Solution {
     // 尝试将tmp和res放到局部函数中.
     pub fn combine2(n: i32, k: i32) -> Vec<Vec<i32>> {

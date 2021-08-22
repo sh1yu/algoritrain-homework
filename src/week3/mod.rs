@@ -1,6 +1,8 @@
 mod lowest_common_ancestor;
 mod build_tree;
 mod combine;
+mod permute;
+mod permute_unique;
 
 use std::fmt::{Debug};
 use std::rc::Rc;

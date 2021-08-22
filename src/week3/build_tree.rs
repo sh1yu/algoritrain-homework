@@ -22,7 +22,6 @@ impl Solution {
         }
 
         let root_val = preorder[0];
-
         let index = Solution::search(root_val, &inorder).unwrap();
 
         let mut root = TreeNode::new(root_val);
@@ -35,7 +34,7 @@ impl Solution {
         Some(Rc::new(RefCell::new(root)))
     }
 
-    // 暴力搜索，实际上用不到
+    // 暴力搜索
     fn search(val: i32, order: &Vec::<i32>) -> Result<usize, usize> {
         for (i, &num) in order.iter().enumerate() {
             if num == val {
